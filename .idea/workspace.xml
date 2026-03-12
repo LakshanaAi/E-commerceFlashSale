@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+ feature/UC3-LimitedEdition
     <list default="true" id="a863896b-5e55-4261-8f57-7aec0bea6570" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/E-commerceFlashManager/src/EcommerceFlashSale.java" beforeDir="false" afterPath="$PROJECT_DIR$/E-commerceFlashManager/src/EcommerceFlashSale.java" afterDir="false" />
     </list>
+
+    <list default="true" id="a863896b-5e55-4261-8f57-7aec0bea6570" name="Changes" comment="" />
+ main
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+ feature/UC3-LimitedEdition
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
     &quot;state&quot;: &quot;OPEN&quot;,
@@ -37,13 +42,33 @@
     &quot;accountId&quot;: &quot;cf4cdba2-4f44-4711-a78b-9f852f500907&quot;
   }
 }</component>
+
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "onlycomp599"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/LakshanaAi/E-commerceFlashSale",
+    "accountId": "cf4cdba2-4f44-4711-a78b-9f852f500907"
+  }
+}]]></component>
+ main
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
+ feature/UC3-LimitedEdition
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
+
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+ main
   <component name="ProjectId" id="3ApQenXh5LYvOlVZZ8MqoflJDLL" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -58,7 +83,11 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+ feature/UC3-LimitedEdition
     "git-widget-placeholder": "feature/UC3-LimitedEdition",
+
+    "git-widget-placeholder": "feature/UC2-ConcertTicketBooking",
+ main
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
