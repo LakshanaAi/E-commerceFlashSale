@@ -54,6 +54,7 @@ class PrimeDayInventory {
     }
 }
 
+
 public class EcommerceFlashSale {
 
     public static void main(String[] args) {
