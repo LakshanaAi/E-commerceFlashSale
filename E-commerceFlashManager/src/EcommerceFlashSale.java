@@ -1,15 +1,14 @@
 import java.util.HashMap;
 import java.util.LinkedHashMap;
-import java.util.Map;
 
 /**
- * UseCase1AmazonPrimeDay
- * Simulates Amazon Prime Day flash sale inventory handling.
+ * UseCase3LimitedEditionLaunch
+ * Simulates a limited edition product launch with restricted stock.
  */
 
-class PrimeDayInventory {
+class LimitedEditionInventory {
 
-    // productId -> stock
+    // productId -> stock count
     private HashMap<String, Integer> stock = new HashMap<>();
 
     // productId -> waiting list (FIFO)
@@ -21,67 +20,66 @@ class PrimeDayInventory {
         waitingList.put(productId, new LinkedHashMap<>());
     }
 
-    // Check stock
+    // Check stock availability
     public int checkStock(String productId) {
         return stock.getOrDefault(productId, 0);
     }
 
-    // Purchase item
-    public synchronized void purchaseItem(String productId, int userId) {
+    // Purchase product
+    public synchronized void purchaseProduct(String productId, int userId) {
 
-        int currentStock = stock.getOrDefault(productId, 0);
+        int available = stock.getOrDefault(productId, 0);
 
-        if (currentStock > 0) {
+        if (available > 0) {
 
-            stock.put(productId, currentStock - 1);
+            stock.put(productId, available - 1);
 
             System.out.println(
-                    "purchaseItem(\"" + productId + "\", userId=" + userId +
-                            ") → Success, " + (currentStock - 1) + " units remaining"
+                    "purchaseProduct(\"" + productId + "\", userId=" + userId +
+                            ") → Success, " + (available - 1) + " units remaining"
             );
 
         } else {
 
             LinkedHashMap<Integer, Integer> queue = waitingList.get(productId);
+
             int position = queue.size() + 1;
+
             queue.put(userId, position);
 
             System.out.println(
-                    "purchaseItem(\"" + productId + "\", userId=" + userId +
+                    "purchaseProduct(\"" + productId + "\", userId=" + userId +
                             ") → Added to waiting list, position #" + position
             );
         }
     }
 }
 
-
 public class EcommerceFlashSale {
 
     public static void main(String[] args) {
 
-        PrimeDayInventory inventory = new PrimeDayInventory();
+        LimitedEditionInventory inventory = new LimitedEditionInventory();
 
-        String product = "IPHONE15_256GB";
+        String product = "LIMITED_SNEAKER_X";
 
-        // Initial stock for Prime Day
-        inventory.addProduct(product, 5);
+        // Limited stock for product launch
+        inventory.addProduct(product, 3);
 
-        System.out.println("===== Amazon Prime Day Flash Sale =====");
+        System.out.println("===== Limited Edition Product Launch =====");
 
         System.out.println(
                 "checkStock(\"" + product + "\") → " +
                         inventory.checkStock(product) + " units available\n"
         );
 
-        // Simulated customers purchasing
-        inventory.purchaseItem(product, 1001);
-        inventory.purchaseItem(product, 1002);
-        inventory.purchaseItem(product, 1003);
-        inventory.purchaseItem(product, 1004);
-        inventory.purchaseItem(product, 1005);
+        // Simulated purchase attempts
+        inventory.purchaseProduct(product, 701);
+        inventory.purchaseProduct(product, 702);
+        inventory.purchaseProduct(product, 703);
 
         // Stock finished
-        inventory.purchaseItem(product, 1006);
-        inventory.purchaseItem(product, 1007);
+        inventory.purchaseProduct(product, 704);
+        inventory.purchaseProduct(product, 705);
     }
 }
