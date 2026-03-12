@@ -4,7 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/E-commerceFlashManager/E-commerceFlashManager.iml" filepath="$PROJECT_DIR$/E-commerceFlashManager/E-commerceFlashManager.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/E-commerceFlashSale.iml" filepath="$PROJECT_DIR$/.idea/E-commerceFlashSale.iml" />
+feature/UC2-ConcertTicket
       <module fileurl="file://$PROJECT_DIR$/ECommerceFlash/ECommerceFlash.iml" filepath="$PROJECT_DIR$/ECommerceFlash/ECommerceFlash.iml" />
+
+ main
     </modules>
   </component>
 </project>
